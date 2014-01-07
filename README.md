@@ -1,10 +1,10 @@
-SunFlower -- Extensible Line of Code Counter
-============================================
+SunFlower -- An Extensible Line of Code Counter
+===============================================
 
 Features
 --------
 * Most of all, users can deal with any NEW languages by just editing a config file (configSunflowerType.xml).
-* Java SWT based application, so theoretically compatible to *nix platforms (need libswt-*.so and path setting).
+* Java SWT based application, so theoretically compatible to \*nix platforms (need libswt-\*.so and path setting).
 * Support encoding including UTF8, Unicode, ISO8859_1, Shift-JIS(Japanese).
 * Report results by File, Folder, Total Lines, Source Lines, Comment Lines, Blank Lines, and Language
 * Differentiated source counting between 2 project folders (check on "base dir"). 

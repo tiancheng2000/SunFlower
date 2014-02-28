@@ -1,11 +1,8 @@
-SunFlower -- An Extensible Line of Code Counter
-===============================================
+SunFlower -- 一个可扩展的行数统计工具
+=====================================
 
-Chinese readme: please reference to [my blog][].
-[my blog]: 
-
-Features
---------
+功能
+------
 * Most of all, users can deal with any NEW languages by just editing a config file (configSunflowerType.xml).
 * Java SWT based application, so theoretically compatible to \*nix platforms (need libswt-\*.so and path setting).
 * Support encoding including UTF8, Unicode, ISO8859_1, Shift-JIS(Japanese).

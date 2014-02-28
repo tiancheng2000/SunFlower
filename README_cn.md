@@ -1,36 +1,38 @@
 SunFlower -- 一个可扩展的行数统计工具
 =====================================
 
+可请参见作者的[中文博客][].
+[中文博客]: http://blog.sina.com.cn/s/blog_72d4b5ff0101dzm1.html
+
 功能
 ------
-* Most of all, users can deal with any NEW languages by just editing a config file (configSunflowerType.xml).
-* Java SWT based application, so theoretically compatible to \*nix platforms (need libswt-\*.so and path setting).
-* Support encoding including UTF8, Unicode, ISO8859_1, Shift-JIS(Japanese).
-* Report results by File, Folder, Total Lines, Source Lines, Comment Lines, Blank Lines, and Language
-* Differentiated source counting between 2 project folders (check on "base dir"). 
+* 用户能仅通过自己编辑修改设定文件(configSunflowerType.xml)，就追加支持新的语种  
+* 基于Java SWT GUI技术，因此能直接在*nix平台上运行（当初也是以此为目标之一。不过需做一下libswt-\*.so和Java执行路径的配置）  
+* 所支持的文字格式包括：UTF8, Unicode, ISO8859_1, Shift-JIS(日语)  
+* 统计结果可导出，包括：文件名, 目录名, 总行数, 代码行数, 注释行数, 空行数, 语种类别  
+* 差分统计：可对两个项目目录下的所有文件做差分行数统计，适用于修改已有项目的情况  
 
-History
+历史
 -------
-This tool was a part time company assignment assigned and accomplished by a team of 2, in 2006.  
-Before that, other groups tried but gave up by different reasons.  
-After that, however, dueing to unknown reasons, the tool has not been popularized in the company.  
-Nowadays, there is a lot of choice in this field.  
-Of course, as the designer and one of the developer of SunFlower, i prefer using it personally.  
+这款小工具是早在2006年初、以公司内部“兼职项目”的形式设计开发完成的，可惜完成得不易（兼职项目就是指在  
+自身有项目或其他正职的情况下、兼任平行来做的项目，而且这个课题、据说在之前也被以兼任方式做过、但是拖  
+了几年未能展开）、但最终卡在宣传环节上、未能真正普及。  
+现在这一块应该已有了很多候选者(e.g.微软的LOC Counter)，不过作为SunFlower的设计者、及开发者之一，  
+我个人还是在用着SunFlower（除了一次在需要差分统计时改了代码，主要就是通过改Config文件来扩展而已）。
 
-Valuable things
+后续价值
 ---------------
-* For those who're interested in LOC, complete set of source and a state chart used to analyse  
-  the source parsing logic are made public.
-* SWT is compatible to *nix platforms. Developers on *nix may tune libswt-*.so and path setting,  
-  and shared it back to the community. There are some trivial bugs, as well~
-* Revise this tool to a [ThinkAlike][]-based Java MVVM application?  
-  (SWT is compatible with ThinkAlike. However, Counting source on mobile device is not a common use case :))  
-  [ThinkAlike]: https://github.com/tiancheng2000/ThinkAlike
+* 对于对LOC(Line of Code Counter，行数统计)这一课题感兴趣的同学，将全部代码、包括当初分析设计用的状态图做一个共享重用  
+* 因个人尚未遇到需直接在*nix GUI方式下统计代码的需求(非图形方式、代码拷出来为主)，如有相关需求的同学、  
+  可请参见[此文][]配置并直接回馈到社区哦~  
+  [此文]: http://www.blogjava.net/kafka0102/archive/2007/06/21/125474.html
+  同时笔者也对MacOS下SWT的配置使用有些兴趣，能直接统计ObjectiveC代码了也许。顺便应该还有些不影响统计结果的小Bug…  
+* 将这个工具也改编成[ThinkAlike框架应用][]？SWT是能作为该Java MVVM框架的平台相关GUI技术的一种的，只
+  不过，好像在移动设备上直接统计行数的用例、实在有点少啊..
+  [ThinkAlike框架应用]: https://github.com/tiancheng2000/ThinkAlike
 
-Thanks to 
+感谢
 ---------
-* Xiao Chen, another team member of developing this tool application.  
-  Remember those afternoons discussing the state chart of source code analyse (much simpler  
-  than Compiling Theory learned in university though).
-* Sunflower, as the birthday flower of July :) 
+* Xiao Chen，本“兼职项目”的另一位开发者。怀念当年一起分析讨论代码解析状态图的纯粹的时光。
+* Sunflower, 作为7月的生日花 :) 
 

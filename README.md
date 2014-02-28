@@ -2,7 +2,7 @@ SunFlower -- An Extensible Line of Code Counter
 ===============================================
 
 Chinese readme: please reference to [my blog][].
-[my blog]: 
+[my blog]: http://blog.sina.com.cn/s/blog_72d4b5ff0101dzm1.html
 
 Features
 --------
